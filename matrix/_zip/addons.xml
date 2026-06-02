@@ -212,18 +212,19 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.thecrew" version="2.0.6" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
+<addon id="plugin.video.thecrew" version="3.0.0" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.thecrew" />
         <import addon="script.thecrew.artwork" />
         <import addon="script.module.requests" />
         <import addon="script.module.resolveurl" />
+        <import addon="script.module.resolveurl.xxx" version="2.0.1" />
         <import addon="script.module.simplejson" />
         <import addon="script.module.requests" />
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
+        <import addon="script.module.orion" optional="true" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.inputstreamhelper" version="0.3.3"/>
     </requires>
@@ -232,11 +233,11 @@
     </extension>
     <extension library="service.py" point="xbmc.service" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">The Crew is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
+        <summary lang="en">The Crew is a team of individuals that does what it can to provide others, you, the best in entertainment.</summary>
         <description lang="en">Many come, Many go. The true and dedicated are here.</description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+        <disclaimer lang="en">The authors of this addon do not host any of the content which is found nor have any affiliation with any of the content providers. This addon simply searches websites for content. Use it at your own risk!</disclaimer>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -345,14 +346,16 @@
 	</extension>
 </addon>
 
-<addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="2.1.1" provider-name="The Crew">
+<addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="3.0.0" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.beautifulsoup4"/>
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.resolveurl.xxx" version="2.0.1" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">The Crew is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
+        <summary lang="en">The Crew is a team of individuals that does what it can to provide others, you, the best in entertainment.</summary>
         <description lang="en">Many come, Many go. The true and dedicated are here.</description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
@@ -376,7 +379,7 @@
 	</extension>
 </addon>
 
-<addon id="script.thecrew.artwork" version="2.0.0" name="[COLOR orchid]THE CREW ARTWORK[/COLOR]" provider-name="The Crew">
+<addon id="script.thecrew.artwork" version="3.0.0" name="[COLOR orchid]THE CREW ARTWORK[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
     </requires>

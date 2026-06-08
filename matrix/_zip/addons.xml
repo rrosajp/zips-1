@@ -212,7 +212,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.thecrew" version="3.0.1" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
+<addon id="plugin.video.thecrew" version="3.0.3" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
         <import addon="script.module.thecrew" />
@@ -233,6 +233,10 @@
     </extension>
     <extension library="service.py" point="xbmc.service" />
     <extension point="xbmc.addon.metadata">
+        <!-- DO NOT set reuselanguageinvoker to true until 3.1 player-bridge soak (Windows + Shield).
+            true reuses the Python interpreter across plugin calls; stale singletons and duplicate
+            player onAVStarted handlers are still possible without the cross-context bridge. -->
+        <reuselanguageinvoker>false</reuselanguageinvoker>
         <summary lang="en">The Crew is a team of individuals that does what it can to provide others, you, the best in entertainment.</summary>
         <description lang="en">Many come, Many go. The true and dedicated are here.</description>
         <platform>all</platform>
@@ -346,7 +350,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="3.0.2" provider-name="The Crew">
+<addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="3.0.3" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
         <import addon="script.module.beautifulsoup4"/>
@@ -379,7 +383,7 @@
 	</extension>
 </addon>
 
-<addon id="script.thecrew.artwork" version="3.0.2" name="[COLOR orchid]THE CREW ARTWORK[/COLOR]" provider-name="The Crew">
+<addon id="script.thecrew.artwork" version="3.0.3" name="[COLOR orchid]THE CREW ARTWORK[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
     </requires>

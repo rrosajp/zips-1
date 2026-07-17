@@ -212,10 +212,10 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.thecrew" version="3.0.10" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
+<addon id="plugin.video.thecrew" version="3.0.11" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
-        <import addon="script.module.thecrew" version="3.0.9.5" />
+        <import addon="script.module.thecrew" version="3.0.9.8" />
         <import addon="script.thecrew.artwork" />
         <import addon="script.module.requests" />
         <import addon="script.module.resolveurl" />
@@ -346,7 +346,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="3.0.9.5" provider-name="The Crew">
+<addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="3.0.9.8" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
         <import addon="script.module.beautifulsoup4"/>
